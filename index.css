@@ -1,0 +1,254 @@
+/* * {
+    box-sizing: border-box;
+    border box subtracts what ever the padding is inside from the box 
+    to make sure that it calculates every single thing from the margin,
+    the padding, even the border so everything can be even
+} */
+
+
+#header {
+    background: black;
+    color: white;
+    overflow: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+a {
+    font-family: helvetica;
+    text-decoration: none;
+    /* Takes off the underline on the link */
+}
+
+#header a:hover {
+    /* The :hover selector is used to select elements when you mouse over them. */
+    color: red;
+}
+.logo {
+    display: inline-block;
+    /* Puts it in a horizontal block */
+    background: red;
+    float: left;
+    margin-right: 25px;
+    padding: 20px;
+}
+
+.leftMenu {
+    float: left;
+    display: inline-block;
+}
+
+.leftMenu ul{
+    list-style: none;
+    /* list style removes the bullets from unordered list */
+    padding: 0;
+    margin: 0;
+}
+
+.leftMenu ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.leftMenu ul li a{
+    /* Can use parent to child elements */
+    color: white
+}
+
+.leftMenu ul li a.dropdown{
+  
+    color: red
+}
+
+.rightMenu {
+    float: right;
+    display: inline-block;
+}
+
+.rightMenu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rightMenu ul li{
+    display: inline-block;
+    padding: 20px; 
+    /* padding is 20px top, bottom, left, right */
+}
+
+.rightMenu ul li a{
+    /* Can use parent to child elements */
+    color: white
+}
+
+.description-box {
+    width: 50%;
+}
+
+.description-box h1 {
+    font-family: serif;
+    /* font weight determines how bold the letter is  */
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0;
+    color: white;
+}
+
+.description-box h3 {
+    font-family: helvetica;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+    color: white;
+}
+
+.description-box h4 {
+    font-family: helvetica;
+    font-weight: 300;
+    margin: 0px;
+    color: white;
+}
+
+.description-box p {
+    margin-top: 20px;
+    font-family: helvetica;
+    font-weight: 400;
+    font-size: 18px;
+    /* margin: 0px; */
+    color: white;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 2px solid #000;
+    background: #000; 
+    color: #fff;
+    cursor: pointer;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 2px solid #000;
+    background: #000; 
+    /* background: #fff; */
+    color: #fff;
+    cursor: pointer;
+    /* cursor pointer shows the hand icon like when you click a link */
+}
+
+.button1:hover, .button2:hover {
+    background: rgba(0,0,0,.6);
+    /* overrides the previous background */
+}
+
+#largeImage{ 
+    background: url(https://celebmix.com/wp-content/uploads/2019/05/film-review-pokémon-detective-pikachu-01.jpg) no-repeat left center; 
+    /* left = horizontal center = vertical fix = stuck wont move with scroller */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 300px 25px;
+    /* padding is 200px top and bottom     25px left and right */
+  }
+
+  #videoSection{
+      width: 100%;
+      background: black;
+  }
+
+  .row {
+      font-size: 0;
+      /* font-size 0 removes white space */
+      width: 100%;
+  }
+
+  .videoBoxes {
+      display: inline-block;
+      background: red;
+      width: 280px;
+      height: 150px;
+      font-size: 36px;
+      margin: 2.5%;
+      /* padding means space inside of the box */
+      padding: 36px;
+      font-family: sans;
+      font-weight: 2;
+      /* font-weight not working???? */
+  }
+
+  .videoBoxes h4{
+      margin: 0;
+      color: white;
+  }
+
+  .video1 {
+    background: url(https://i.pinimg.com/originals/35/5d/65/355d65da2e1dc28b3399951765bc5fb1.jpg) no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .video2 {
+    background: url(http://comicsagogo.files.wordpress.com/2011/11/tintin-movie-poster-horizontal.jpg) no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .video3 {
+    background: url(https://i.pinimg.com/originals/66/24/96/6624960f0062bd8b8845037c6776277c.jpg) no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .video4 {
+    background: url(https://www.movieartarena.com/imgs/2fasthz.jpg) no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .video5 {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRop1-CZoFq8PM6boMT58hhFApD7qkc2-ERcRJq6l1simgsHsep) no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .video5 {
+    background: url(https://vignette.wikia.nocookie.net/expendables/images/f/f1/The-expendables-poster1.jpeg/revision/latest?cb=20120601004135) no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .video6 {
+    background: url(https://static2.srcdn.com/wordpress/wp-content/uploads/2018/07/Aquaman-Horizontal-Poster.jpg) no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* For Mobile */
+  @media only screen and (max-width: 600px) {
+    .videoBoxes {
+      width: 95%;
+      margin: 2.5%;
+    }
+    .videoBoxes h4 {
+        font-family: helvetica;
+        font-weight: 100;
+        font-size: 40px;
+    }
+}
