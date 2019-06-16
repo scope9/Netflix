@@ -144,7 +144,8 @@ a {
 }
 
 #largeImage{ 
-    background: url(https://celebmix.com/wp-content/uploads/2019/05/film-review-pokémon-detective-pikachu-01.jpg) no-repeat left center; 
+    /* background: url(https://celebmix.com/wp-content/uploads/2019/05/film-review-pokémon-detective-pikachu-01.jpg) no-repeat left center;  */
+    background: url("pokemon.jpg") no-repeat left center;
     /* left = horizontal center = vertical fix = stuck wont move with scroller */
     -webkit-background-size: cover;
     -moz-background-size: cover;
